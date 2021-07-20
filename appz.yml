@@ -1,8 +1,7 @@
 app:
     name: alertmanager
     code: alertmanager
-    notify: appzdev@cloudbourne.co
-
+    notify: bkoshy@ecloudcontrol.com
 build:
     version: 0.2
     env: DEV
@@ -11,7 +10,7 @@ build:
     image_template: alertmanager-0.20
 
 deploy:
-    context: alpha/DEV
+    context: bibin-ecloudcontrol/DEV
     type: statefulset
     replicas: 1
     port:
